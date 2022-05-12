@@ -1,365 +1,265 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>BCA</title>
+        <title>Bích Ngọc - BCA Solutions</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/responsive.css">
         <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
         <link rel="shortcut icon" href="./assets/img/bca.png" type="image/x-icon">
     </head>
 
-    <style>
-    /* All */
-*{
-    padding: 0;
-    margin: 0;
-}
-
-html{
-    font-size: 15px;
-}
-
-body{
-    font-family: "Lato", sans-serif;
-}
-
-a{
-    text-decoration: none;
-}
-
-ul{
-    list-style-type: none;
-}
-
-.clear{
-    clear: both;
-}
-
-.auto{
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.line{
-    display: block;
-    height: 2px;
-    background-color: #e8e8e8;
-    width: 100%;
-}
-
-
-#header{
-    height: 46.33px;
-    background: #000;
-    box-shadow: 0 0 10px rgb(0 0 0 / 40%);
-}
-
-#nav{
-    text-transform: uppercase;
-    display: inline-block;
-    height: 46px;
-    background: #000;
-}
-
-#nav li {
-    display: inline-block;
-}
-
-#nav li a{
-    padding: 14.6px 24px;
-    line-height: 46px;
-    color: #fff;
-}
-
-#nav li a:hover{
-    color: #000;
-    background-color: #ccc;
-}
-
-#slider{
-    padding-top: 50%;
-    background: url("file:///C:/Users/Admin/OneDrive/BCA%20Web/assets/img/slider.png") top center / cover no-repeat;
-}
-
-#content{
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.heading{
-    width: 100%;
-    text-align: center;
-    letter-spacing: 4px;
-    font-weight: 200;
-    margin: 10px 0;
-}
-.sub-heading{
-    margin: 15px 0;
-    opacity: 0.6;
-    width: 100%;
-    text-align: center;
-}
-.description{
-    margin: 15px auto;
-    text-align: justify;
-}
-
-.about{
-    padding: 64px 16px;
-    /* background-color: #e8e8e8; */
-}
-
-#content .about .row{
-    padding: 32px 0;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.about .col-third{
-    text-align: center;
-    width: 23.3333%;
-    display: inline-block;
-    float: left;
-    padding: 0 32px;
-}
-
-.about .col-third img{
-    border-radius: 4px;
-    margin-bottom: 16px;
-}
-
-#product{
-    padding: 64px 16px;
-    background: #fff;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-#product .row{
-    padding: 32px 8px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-#product .col-third{
-    width: 30.3333%;
-    display: inline-block;
-    float: left;
-    margin: 0 8px;
-}
-
-#product .col-third:hover{
-    width: 31.3333%;
-    box-shadow: 0 0 10px rgb(0 0 0 / 40%);
-}
-
-.col-third img{
-    display: block;
-    width: 100%;
-    text-align: center;
-}
-
-.col-third .content{
-    padding: 8px;
-    background: #ddd;
-}
-
-.col-third .product-name{
-    font-size: 15px;
-    margin-bottom: 20px;
-}
-
-.col-third .product-cost{
-    color: #ee4d2d;
-    font-weight: 500;
-    margin: 8px 0;
-    font-size: 18px;
-}
-
-.col-third .buy-btn{
-    color: #fff;
-    display: inline-block;
-    background-color: #f44336;
-    padding: 8px;
-    border-radius: 4px;
-    margin: 8px 0;
-}
-
-#footer{
-    padding: 42px 0;
-    background-color: #e8e8e8;
-}
-
-#footer img{
-    width: 100px;
-    margin: 0 auto;
-    text-align: center;
-    display: block;
-}
-
-#footer .icon{
-    font-size: 30px;
-    padding: 32px 16px;
-    text-align: center;
-}
-
-#footer i{
-    padding: 8px;
-    display: inline-block;
-}
-
-#footer i:hover{
-    color: rgb(0, 0, 255);
-}
-
-
-    </style>
-    
     <body>
-        <div id="header">
-            <ul id="nav">
-                <li><a href="#">Trang chủ</a></li>
-                <li><a href="#">Giới thiệu</a></li>
-                <li><a href="#">Sản phẩm</a></li>
-                <li><a href="#">Video</a></li>
-                <li><a href="#">Liên hệ</a></li>
-            </ul>
-        </div>
+        <div class="main">
+            <div id="header">
+                <div id="mobile-menu" class="menu-icon">
+                    <i class="ti-menu"></i>
+                </div>
+                <ul id="nav">
+                    <a href="#" class="btn-li">Trang chủ</a>
+                    <a class="a-full btn-li" href="#about">Giới thiệu</a>
+                    <a class="a-full btn-li" href="#product">Sản phẩm</a>
+                    <a class="a-full btn-li" href="#registry">Đăng ký thành viên</a>
+                    <a class="a-full btn-li" href="#footer">Liên hệ</a>
+                </ul>
+            </div>
 
-        <div id="slider"></div>
+            <div id="slider"></div>
 
-        <div id="content" >
-            <div class="about">
-                <h2 class="heading">
-                    Bích Ngọc - BCA Solution
-                </h2>
-                <p class="sub-heading">
-                    Đại lý Siêu thị nhượng quyền BCA Solutions - Bích Ngọc - Ninh Bình
-                </p>
-                <p class="description">
-                    BCALiving - Nâng tầm trải nghiệm mua sắm online của bạn.
-                    Tòa nhà Landmark 3, số 208 Nguyễn Hữu Cảnh,Phường 22, Quận Bình Thạnh, Tp. Hồ Chí Minh.
-                    BCA Solutions (hay BCA Solutions Việt Nam) được ra mắt từ năm 2018 với sứ mệnh trở thành thương hiệu tiên phong đưa ra các giải pháp công.
-                    We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                </p>
-                
-                <div class="row">
-                    <div class="col-third"> <img src="file:///C:/Users/Admin/OneDrive/BCA%20Web/assets/img/278776492_1947849122065759_2269187945430008582_n-removebg-preview.png" alt=""></div>  
-                    <div class="col-third"> <img src="file:///C:/Users/Admin/OneDrive/BCA%20Web/assets/img/278776492_1947849122065759_2269187945430008582_n-removebg-preview.png" alt=""></div>  
-                    <div class="col-third"> <img src="file:///C:/Users/Admin/OneDrive/BCA%20Web/assets/img/278776492_1947849122065759_2269187945430008582_n-removebg-preview.png" alt=""></div>  
+            <div id="content">
+                <div id="about">
+                    <div class="about">
+                        <h2 class="heading">
+                            Giới thiệu
+                        </h2>
+                        <p class="sub-heading mb-32">
+                            BCA Solutions - Bích Ngọc - Ninh Bình
+                        </p>
+                        <div class="row">
+                            <div class="col-half dsc">
+                                <p class="description">
+                                    Nguyễn Thị Bích Ngọc - SĐT: <a href="tel:0968302782" class="phone-number">0968302782</a>. Địa chỉ: Cụm 7 phố Mới, thị trấn Me, huyện Gia Viễn, tỉnh Ninh Bình.
+                                    Đối tác tại Dự án Phụ Nữ Khởi Nghiệp. Làm việc tại Kinh Doanh Online Bca Solutions. Giáo viên quèn tại THCS Gia Thinh. Từng học tại Đại học Hoa Lư Ninh Bình.
+                                    Đã học tại TH PT Gia Viễn A.Sống tại Ninh Bình. Đến từ Ninh Bình.  Đại lý Siêu thị nhượng quyền BCA Solutions - Bích Ngọc - Ninh Bình.
+                                </p>
+                            </div>
+        
+                            <div class="col-half center">
+                                <a href="https://www.facebook.com/chi.hoang.1000" target="_blank"><img src="./assets/img/avartar.png" alt="Bích Ngọc"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <div class="line"></div>
+
+                <div id="product">               
+                    <h2 class="heading">Một số sản phẩm</h2>
+                    <p class="sub-heading">Hàng chất lượng - Giá thành hợp lí</p>
+                    <div class="row">
+                        <div class="col">
+                            <img src="./assets/img/kuchenrobot.jpg">
+                            
+                            <div class="content">
+                                <h3 class="product-name">Robot hút bụi lau nhà Kuchen 8881</h3>
+                                <p class="product-cost">
+                                    ₫13,900,000
+                                </p>
+                                <a href="#" class="buy-btn">Thông tin sản phẩm</a>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <img src="./assets/img/nhansam.png">
+                            
+                            <div class="content">
+                                <h3 class="product-name">Bột nhân sâm Canada CND GINSENG</h3>
+                                <p class="product-cost">
+                                    ₫1,600,000
+                                </p>
+                                <a href="https://shopee.vn/B%E1%BB%99t-nh%C3%A2n-s%C3%A2m-Canada-CND-GINSENG-i.757921306.16162320547?sp_atk=5988a8ed-0e49-41a6-b766-4521db9d8690&xptdk=5988a8ed-0e49-41a6-b766-4521db9d8690" class="buy-btn" target="_blank">Thông tin sản phẩm</a>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <img src="./assets/img/vlive.jpg">
+                            
+                            <div class="content">
+                                <h3 class="product-name">
+                                    Bộ 3 thực phẩm dinh dưỡng tế bào V-Live</h3>
+                                <p class="product-cost">
+                                    3,680,000 ₫
+                                </p>
+                                <a href="https://bcaliving.vn/san-pham/bo-3-thuc-pham-dinh-duong-te-bao-v-live-v1/" class="buy-btn" target="_blank">Thông tin sản phẩm</a>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <img src="./assets/img/sa.png">
+                            
+                            <div class="content">
+                                <h3 class="product-name">
+                                    Sữa hạt dinh dưỡng SATYCA GOLD</h3>
+                                <p class="product-cost">
+                                    ₫296,000
+                                </p>
+                                <a href="https://bcaliving.vn/san-pham/sua-yen-mach-dinh-duong-satyca-beauty/" class="buy-btn" target="_blank">Thông tin sản phẩm</a>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <img src="./assets/img/diepluc.jpg">
+                            
+                            <div class="content">
+                                <h3 class="product-name">
+                                    Diệp Lục TH-Chlorophyll UIE PLUS 500ml</h3>
+                                <p class="product-cost">
+                                    ₫499,000
+                                </p>
+                                <a href="#" class="buy-btn" target="_blank">Thông tin sản phẩm</a>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <img src="./assets/img/bolada.jpg">
+                            
+                            <div class="content">
+                                <h3 class="product-name">Kem bôi Bolada-Bí quyết vàng cho làn da</h3>
+                                <p class="product-cost">
+                                    ₫360,000
+                                </p>
+                                <a href="https://bcaliving.vn/san-pham/kem-boi-bolada/" class="buy-btn" target="_blank">Thông tin sản phẩm</a>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <img src="./assets/img/apalight.png">
+                            
+                            <div class="content">
+                                <h3 class="product-name">                               
+                                    BỘT ĐÁNH TRẮNG RĂNG APALIGHT</h3>
+                                <p class="product-cost">
+                                    ₫395,000
+                                </p>
+                                <a href="https://bcaliving.vn/bot-danh-trang-rang-apalight//?utm_source=Ngocbca82" class="buy-btn" target="_blank">Thông tin sản phẩm</a>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <img src="./assets/img/bishin.png">
+                            
+                            <div class="content">
+                                <h3 class="product-name">
+                                    Viên uống Bishin Collagen giúp làn da</h3>
+                                <p class="product-cost">
+                                    ₫960,000
+                                </p>
+                                <a href="https://bcaliving.vn/vien-uong-bishin-collagen//?utm_source=Ngocbca82" class="buy-btn" target="_blank">Thông tin sản phẩm</a>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <img src="./assets/img/gỏaka.png">
+                            
+                            <div class="content">
+                                <h3 class="product-name">Viên uống giảm cân Goraka Slimming </h3>
+                                <p class="product-cost">
+                                    ₫590,000
+                                </p>
+                                <a href="https://bcaliving.vn/vien-uong-giam-can-goraka-slimming//?utm_source=Ngocbca82" class="buy-btn" target="_blank">Thông tin sản phẩm</a>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
                     <div class="clear"></div>
                 </div>
             </div>
 
             <div class="line"></div>
 
-            <div id="product">               
-                <h2 class="heading">Một số sản phẩm</h2>
-                <p class="sub-heading">Hàng chất lượng - Giá thành hợp lí</p>
-                <div class="row">
-                    <div class="col-third">
-                        <img src="https://scontent.fhan15-2.fna.fbcdn.net/v/t39.30808-6/279688944_1954491931401478_2382856823505403661_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=ikpEVKClIeMAX-tuP_s&_nc_ht=scontent.fhan15-2.fna&oh=00_AT-ob8oMFeZXkNJIpKbq7CXFxckNZlVqrrQjnCQV7xpnvQ&oe=6276D2AF" alt="">
-                        
-                        <div class="content">
-                            <h3 class="product-name">Robot hút bụi lau nhà Kuchen 8881</h3>
-                            <p class="product-cost">
-                                ₫13,000,000
-                            </p>
-                            <a href="#" class="buy-btn">Mua hàng</a>
-                        </div>
-                    </div>
-
-                    <div class="col-third">
-                        <img src="./assets/img/nhansam.png" alt="">
-                        
-                        <div class="content">
-                            <h3 class="product-name">Bột nhân sâm Canada CND GINSENG</h3>
-                            <p class="product-cost">
-                                ₫1,600,000
-                            </p>
-                            <a href="#" class="buy-btn">Mua hàng</a>
-                        </div>
-                    </div>
-
-                    <div class="col-third">
-                        <img src="./assets/img/vlive.jpg" alt="">
-                        
-                        <div class="content">
-                            <h3 class="product-name">
-                                Bộ 3 thực phẩm dinh dưỡng tế bào V-Live</h3>
-                            <p class="product-cost">
-                                3,680,000 ₫
-                            </p>
-                            <a href="#" class="buy-btn">Mua hàng</a>
-                        </div>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-
-                <div class="row">
-                    <div class="col-third">
-                        <img src="./assets/img/sa.png" alt="">
-                        
-                        <div class="content">
-                            <h3 class="product-name">
-                                Sữa hạt dinh dưỡng SATYCA GOLD</h3>
-                            <p class="product-cost">
-                                ₫296,000
-                            </p>
-                            <a href="#" class="buy-btn">Mua hàng</a>
-                        </div>
-                    </div>
-
-                    <div class="col-third">
-                        <img src="./assets/img/diepluc.jpg" alt="">
-                        
-                        <div class="content">
-                            <h3 class="product-name">
-                                Nước Diệp Lục TH-Chlorophyll UIE PLUS 500ml | Thanh lọc cơ thể</h3>
-                            <p class="product-cost">
-                                ₫499,000
-                            </p>
-                            <a href="#" class="buy-btn">Mua hàng</a>
-                        </div>
-                    </div>
-
-                    <div class="col-third">
-                        <img src="./assets/img/bolada.jpg" alt="">
-                        
-                        <div class="content">
-                            <h3 class="product-name">Kem bôi Bolada </h3>
-                            <p class="product-cost">
-                                ₫360,000
-                            </p>
-                            <a href="#" class="buy-btn">Mua hàng</a>
-                        </div>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-                <div class="clear"></div>
+            <div id="registry" class="link-opp">
+                <a href="https://erp.bcasolutions.vn/Account/registry?sponsor=NgocBCA82&fbclid=IwAR1GXlsKMRPFDZ-GRVkqAF_EcbH8NlEe017mwp_bvgyHeA8oIjZKSMWLopA" target="_blank"><img class="opp-btn" src="./assets/img/dangky.png" alt=""></a>
             </div>
-        </div>
 
-        <div class="line"></div>
+            <div class="line"></div>
 
-        <div id="video">
-            <h1 class="heading">VIDEO</h1>
-            <p class="sub-heading">Kho video BCA</p>
-        </div>
+            <div class="send-message">
+                <h1 class="heading">LIÊN HỆ</h1>
+                <div class="row">
+                    <form action="https://www.w3schools.com/action_page.php">
+                        <input class="col-half" type="text" name="Name" placeholder="Name" style="margin-right: 1%;">
+                        <input class="col-half" type="email" name="Email" placeholder="Email">
+                        <input class="col-full" type="text" name="Message" placeholder="Message">
 
-        <div id="footer">
-            <img src="file:///C:/Users/Admin/OneDrive/BCA%20Web/assets/img/bca.png" alt="">
-            <div class="icon">
-                <i class="ti-facebook"></i>
-                <i class="ti-twitter-alt"></i>
-                <i class="ti-youtube"></i>
-                <i class="ti-instagram"></i>
-                <i class="ti-linkedin"></i>
-                <i class="ti-reddit"></i>
+                        <button type="submit" class="btn">Send</button>
+                        <div class="clear"></div>
+                    </form>
+                </div>
+
+            </div>
+
+            <div id="footer">
+                <div class="col-third">
+                    <a href="https://themify.me/themify-icons">Icon</a>
+                    <a href="./video/video.html">Video</a>
+                    <a href=""></a>
+                </div>
+
+                <div class="col-third">
+                    
+                </div>
+
+                <div class="col-third">
+                    
+                </div>
+
+                <div class="icon">
+                    <a href="https://www.facebook.com/bichngoc.nb.bcasolutions"><i class="ti-facebook"></i></a>
+                    <a href="https://www.facebook.com/bichngoc.nb.bcasolutions"><i class="ti-twitter-alt"></i></a>
+                    <a href="https://www.facebook.com/bichngoc.nb.bcasolutions"><i class="ti-youtube"></i></a>
+                    <a href="https://www.facebook.com/bichngoc.nb.bcasolutions"><i class="ti-instagram"></i></a>
+                    <a href="https://www.facebook.com/bichngoc.nb.bcasolutions"><i class="ti-linkedin"></i></a>
+                    <a href="https://www.facebook.com/bichngoc.nb.bcasolutions"><i class="ti-reddit"></i></a>
+                </div>
             </div>
         </div>
     </body>
+
+    <script>
+        // Đóng mở menu
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+
+        mobileMenu.onclick = function(){
+            var closed = header.clientHeight === headerHeight;
+            if (closed){
+                header.style.height = 'auto';
+            }
+            else{
+                header.style.height = null;
+            }
+        }
+        // Tự động đóng menu khi ấn nav
+
+        var menuItems = document.querySelectorAll('#nav a[href*="#"]');
+        
+        for(var i = 0; i < menuItems.length; i++){
+            var menuItem = menuItems[i];
+            menuItem.onclick = function(){
+                header.style.height = null;
+            }
+        }
+
+    </script>
+
 </html>

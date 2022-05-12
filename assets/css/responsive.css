@@ -1,0 +1,160 @@
+/* Div đặc biệt */
+
+.font-s{
+    font-size: 10px;
+}
+
+
+/* Tablet */
+
+@media(min-width: 46.25em) and (max-width:64em){
+    .about{
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    
+    .about .col-half{
+        width: 45%;
+    }
+    
+    .about .col-half img{ 
+        float: right;
+        width: 70%;
+    }
+
+    .col .buy-btn{
+        text-align: center;
+        padding: 16px 0;
+        width: 92%;
+    }
+    
+    /* Cuối trang */
+    
+    #footer .icon{
+        font-size: 30px;
+        padding: 16px;
+    }
+}
+
+/* Smart phone */
+
+@media (max-width: 46.1875em){
+    .menu-icon{
+        cursor: pointer;
+        display: block;
+        float: right;
+        padding: 14px 22px 14px;
+    }
+    
+    .menu-icon:hover{
+        background-color: #f44336;
+    }
+
+    /* Thanh nav */
+
+    #nav{
+        display: block;
+    }
+    #nav a{
+        display: block;
+    }
+
+    #nav a .a-full{
+        width: 100%;
+    }
+
+    /*  */
+
+    .description{
+        line-height: 25px;
+    }
+
+    /* giới thiệu */
+
+    .about{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .about .col-half{
+        width: 90%;
+        display: block;
+    }
+    
+    .about .col-half img{ 
+        margin-top: 32px;
+    }
+
+    /* Sản phẩm bán */
+
+    #product .row{
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    
+    #product .col{
+        margin: 0 0;
+        margin-bottom: 32px;
+        width: 100%;
+        
+    }
+
+    #product .col:hover{
+        width: 100%;
+        box-shadow: 0 0 10px rgb(0 0 0 / 40%);
+    }
+    
+    .col img{
+        width: 100%;
+    }
+    
+    .col .product-name{
+        font-size: 20px;
+    }
+    
+    .col .product-cost{
+        margin: 8px 0;
+        font-size: 23px;
+    }
+    
+    .col .buy-btn{
+        font-size: 23px;
+        display: block;
+        text-align: center;
+        padding: 16px 0;
+        width: 95%;
+    }
+
+    /* form liên hệ */
+
+    .send-message .col-half{
+        width: 95%;
+        display: inline-block;
+    }
+
+    .send-message .col-full{
+        width: 95%;
+    }
+
+    .btn{
+        display: block;
+        padding: 10px;
+        background-color: #000;
+        color: #fff;
+        border: none;
+        font-size: 18px;
+        width: 100%;
+    }
+    
+    .btn:hover{
+        background-color: #ccc;
+        color: #000;
+    }
+
+    /* cuối trang */
+
+    #footer .icon{
+        font-size: 30px;
+        padding: 16px;
+    }
+}
