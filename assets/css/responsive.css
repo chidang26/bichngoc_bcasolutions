@@ -108,16 +108,16 @@
         width: 100%;
     }
     
-    .col .product-name{
+    #product .col .product-name{
         font-size: 20px;
     }
     
-    .col .product-cost{
+    #product .col .product-cost{
         margin: 8px 0;
-        font-size: 23px;
+        font-size: 25px;
     }
     
-    .col .buy-btn{
+    #product .col .buy-btn{
         font-size: 23px;
         display: block;
         text-align: center;
