@@ -244,34 +244,6 @@ ul{
 
 .opp-btn:hover{
     opacity: 2;
-    width: 22%;
-}
-
-.send-message{
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 64px 16px;
-}
-
-.send-message .row{
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.send-message input{
-    padding: 8px;
-    text-align: justify;
-    border: 1px solid #ccc;
-    margin-bottom: 16px;
-}
-
-.send-message .col-half{
-    width: 46%;
-    display: inline-block;
-}
-
-.send-message .col-full{
-    width: 96%;
 }
 
 #footer{

@@ -129,16 +129,6 @@
         width: 95%;
     }
 
-    /* form liên hệ */
-
-    .send-message .col-half{
-        width: 95%;
-        display: inline-block;
-    }
-
-    .send-message .col-full{
-        width: 95%;
-    }
 
     .btn{
         display: block;
