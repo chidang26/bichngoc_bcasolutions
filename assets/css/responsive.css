@@ -69,6 +69,10 @@
         line-height: 25px;
     }
 
+    .row{
+        display: block;
+    }
+
     /* giới thiệu */
 
     .about{
