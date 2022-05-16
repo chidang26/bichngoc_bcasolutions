@@ -278,11 +278,12 @@ ul{
 }
 
 #footer .icon{
-    max-width: 438px;
+    max-width: 185px;
     margin: 0 auto;
     font-size: 30px;
     padding: 32px 0;
     text-align: center;
+    display: flex;
 }
 
 #footer i{
