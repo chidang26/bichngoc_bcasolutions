@@ -91,19 +91,19 @@
 
     /* Sản phẩm bán */
 
-    #product .row{
+    .product .row{
         padding-bottom: 0;
         padding-top: 0;
     }
     
-    #product .col{
+    .product .col{
         margin: 0 0;
         margin-bottom: 32px;
         width: 100%;
         
     }
 
-    #product .col:hover{
+    .product .col:hover{
         width: 100%;
         box-shadow: 0 0 10px rgb(0 0 0 / 40%);
     }
@@ -112,16 +112,16 @@
         width: 100%;
     }
     
-    #product .col .product-name{
+    .product .col .product-name{
         font-size: 20px;
     }
     
-    #product .col .product-cost{
+    .product .col .product-cost{
         margin: 8px 0;
         font-size: 25px;
     }
     
-    #product .col .buy-btn{
+    .product .col .buy-btn{
         font-size: 23px;
         display: block;
         text-align: center;
