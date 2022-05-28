@@ -8,16 +8,21 @@
 /* Tablet */
 
 @media(min-width: 46.25em) and (max-width:64em){
+    #about{
+        display: flex;
+        flex-direction: column;
+    }
+
     .about{
         max-width: 700px;
         margin: 0 auto;
     }
     
-    .about .col-half{
+    .about__col{
         width: 45%;
     }
     
-    .about .col-half img{ 
+    .about__col img{ 
         float: right;
         width: 70%;
     }
@@ -52,14 +57,14 @@
 
     /* Thanh nav */
 
-    #nav{
+    .header__nav{
         display: block;
     }
-    #nav a{
+    .header__nav a{
         display: block;
     }
 
-    #nav a .a-full{
+    .header__nav a .a-full{
         width: 100%;
     }
 
@@ -69,64 +74,79 @@
         line-height: 25px;
     }
 
-    .row{
-        display: block;
-    }
-
     /* giới thiệu */
 
-    .about{
-        max-width: 400px;
-        margin: 0 auto;
+    #about{
+        display: flex;
     }
 
-    .about .col-half{
+    .about{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about__row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about__col{
         width: 90%;
         display: block;
     }
     
-    .about .col-half img{ 
+    .about__col img{ 
         margin-top: 32px;
     }
 
     /* Sản phẩm bán */
 
-    .product .row{
-        padding-bottom: 0;
-        padding-top: 0;
-    }
-    
-    .product .col{
-        margin: 0 0;
-        margin-bottom: 32px;
-        width: 100%;
-        
+    .product__row, .product__col{
+        display: flex;
+        flex-direction: column;
     }
 
-    .product .col:hover{
-        width: 100%;
-        box-shadow: 0 0 10px rgb(0 0 0 / 40%);
+    .product__row{
+        padding: 0;
+        align-items: center;
     }
     
-    .col img{
+    .product__col{
+        margin: 0 0 32px 0;
+        display: flex;
+        width: 85%;
+        box-shadow: 0 0 10px rgb(0 0 0 / 40%); 
+    }
+
+    .product__col:hover{
+        width: 85%;
+    }
+    
+    .product__col img{
         width: 100%;
     }
     
-    .product .col .product-name{
+    .product__content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product__col .product-name{
         font-size: 20px;
     }
     
-    .product .col .product-cost{
+    .product__col .product-cost{
         margin: 8px 0;
         font-size: 25px;
     }
     
-    .product .col .buy-btn{
+    .product__view-btn{
         font-size: 23px;
         display: block;
         text-align: center;
         padding: 16px 0;
-        width: 95%;
+        width: 100%;
     }
 
 
@@ -145,10 +165,18 @@
         color: #000;
     }
 
+    .opp-btn{
+        display: none;
+    }
+
     /* cuối trang */
 
     #footer .icon{
         font-size: 30px;
         padding: 16px;
+    }
+
+    #footer .col-third{
+        display: none;
     }
 }

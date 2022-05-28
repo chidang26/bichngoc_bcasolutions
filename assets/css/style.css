@@ -111,18 +111,18 @@ ul{
     z-index: 1;
 }
 
-#nav{
+.header__nav{
     text-transform: uppercase;
     display: inline-block;
     background: #000;
 }
-#nav a{
+.header__nav a{
     color: #fff;
     padding: 14.6px 24px;
     display: inline-block;
 }
 
-#nav .btn-li:hover{
+.nav__item:hover{
     color: #000;
     background-color: #ccc;
 }
@@ -132,40 +132,37 @@ ul{
     background: url('../img/slider1.jpg') top center / cover;
 }
 
-#content{
-}
-
-
 #about{
     background-color: #000;
 }
 
 .about{
     color: #fff;
-    max-width: 800px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
     padding: 64px 16px;
     text-align: justify;
 }
 
-.about .row{
-    width: 100%;
+.about__row{
+    margin: 0 auto;
+    max-width: 800px;
+    display: flex;
 }
 
-.about .col-half{
+.about__col{
     width: 45%;
-    display: inline-block;
     padding: 0 16px;
     flex: 1;
 }
 
-.about .dsc{
+.about .about__col__description{
     background-color: #fff;
     color: #000;
     border-radius: 1%;
 }
 
-.about .col-half img{ 
+.about__col img{ 
     width: 60%;
     text-align: center;
     border-radius: 50%;
@@ -174,53 +171,59 @@ ul{
 }
 
 /* product */
+.product, .product__row{
+    display: flex;
+    flex-direction: column;
+}
+
 .product{
     padding: 64px 16px;
     max-width: 800px;
     margin: 0 auto;
 }
 
-.product .row{
+.product__row{
     padding: 32px 8px;
+    flex-direction: row;
 }
 
-.product .col{
+.product__col{
+    width: 30.3333%;
     cursor: pointer;
-    display: inline-block;
     float: left;
     margin: 0 1.3%;
     flex: 1;
 }
 
-.product .col:hover{
+.product__col:hover{
     width: 31.3333%;
     box-shadow: 0 0 10px rgb(0 0 0 / 40%);
 }
 
-.product .col img{
+.product__col img{
     display: block;
     width: 100%;
     text-align: center;
 }
 
-.product .col .content{
+.product__content{
     padding: 8px;
     background: #ddd;
 }
 
-.product .col .product-name{
+.product__name{
     margin-bottom: 20px;
     font-size: 15px;
 }
 
-.product .col .product-cost{
+.product__cost{
     color: #ee4d2d;
     font-weight: 500;
     margin: 8px 0;
     font-size: 18px;
 }
 
-.product .col .buy-btn{
+.product__view-btn{
     color: #fff;
     display: inline-block;
     background-color: #f44336;
@@ -228,6 +231,27 @@ ul{
     border-radius: 4px;
     margin: 8px 0;
 }
+
+.product__more {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.product__more-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ddd;
+    min-width: 24.375rem;
+    height: 2.5rem;
+    font-size: 14px;
+}
+
+/* OPP */
 
 .link-opp{
     padding-top: 50%;
@@ -291,6 +315,10 @@ ul{
 
 #footer i:hover{
     color: rgb(0, 0, 255);
+}
+
+.page{
+    display: none;
 }
 
 
