@@ -1,48 +1,3 @@
-/* All */
-*{
-    padding: 0;
-    margin: 0;
-}
-
-html{
-    font-size: 15px;
-    scroll-behavior: smooth;
-}
-
-body{
-    font-family: "Lato", sans-serif;
-}
-
-a{
-    text-decoration: none;
-}
-
-.menu-icon{
-    display: none;
-    color: #fff;
-}
-
-.heading{
-    width: 100%;
-    text-align: center;
-    letter-spacing: 4px;
-    font-weight: 200;
-    margin: 10px 0;
-    text-transform: uppercase;
-    font-size: 30px;
-}
-.sub-heading{
-    margin: 15px 0;
-    opacity: 0.6;
-    width: 100%;
-    text-align: center;
-}
-.description{
-    margin: 15px 0;
-    text-align: justify;
-    line-height: 25px;
-}
-
 /* main */
 #header{
     overflow: hidden;
@@ -59,6 +14,7 @@ a{
     display: inline-block;
     background: #000;
 }
+
 .header__nav a{
     color: #fff;
     padding: 14.6px 24px;
@@ -73,7 +29,6 @@ a{
 /* product */
 .product, .product__row{
     display: flex;
-
 }
 
 #product{
@@ -86,52 +41,199 @@ a{
     padding: 32px 8px;
     flex-direction: row;
     flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .product__col{
+    position: relative;
     border: 1px solid #ccc;
     flex: 1;
     min-width: 185px;
     max-width: 185px;
     margin: 8px 6px;
     background: #fff;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
 }
 
 .product__col:hover{
-    border: 1px solid #ee4d2d;
+    border: 1px solid var(--primary-color);
     box-shadow: 0 0 10px rgb(0 0 0 / 40%);
 }
 
-.product__col img{
+.product__col:hover .product__view-btn {
+    display: block;
+}
+
+/* Nhãn giảm giá  */
+
+.product__flash-sale {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #ffd839;
+    right: 0;
+    align-items: center;
+    line-height: 17px;
+    opacity: 0.9;
+    padding: 2px 3px;
+    font-size: 12px;
+}
+
+.product__flash-sale::after {
+    content: "";
+    width: 0;
+    height: 0;
+    left: 0;
+    bottom: -4px;
+    position: absolute;
+    border-color: transparent rgba(255,212,36,.9);
+    border-style: solid;
+    border-width: 0 18px 4px;
+}
+
+.flash-sale__number {
+    color: #f07430;
+}
+
+.flash-sale__text {
+    color: #fff;
+}
+
+/* Nhan yeu thich  */
+
+.product__love-product {
+    display: flex;
+    color: #fff;
+    background-color: #f25220;
+    position: absolute;
+    top: 10px;
+    left: -3px;
+    align-items: center;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.product__love-product::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: -0.1875rem;
+    border-top: 0.1875rem solid #913113;
+    border-left: 0.1875rem solid transparent;
+    filter: brightness(60%);
+}
+
+.product__love-product p {
+    color: #fff;
+    font-size: .75rem;
+    line-height: .875rem;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 9px;
+}
+
+/* Ảnh và nội dung  */
+
+.product__col img {
     display: block;
     width: 100%;
     text-align: center;
 }
 
-.product__content{
+.product__content {
+    display: flex;
+    flex-direction: column;
     padding: 8px;
     background: #fff;
 }
 
-.product__name{
-    margin-bottom: 20px;
-    font-size: 15px;
+.product__name {
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: var(--text-color);
+}
+
+.product__time-sale {
+    display: flex;
+    padding: 0.125rem 0.25rem;
+    min-height: 10px;
+    color: var(--primary-color);
+    border: 0.0625rem solid var(--primary-color);
+    font-size: 0.625rem;
+    align-items: center;
+    width: 56.2%;
+}
+
+.product__time-sale--none {
+    display: flex;
+    min-height: 10px;
+    border: none;
+    width: none;
+    color: #fff;
+}
+
+.product__sale {
+    display: flex;
+}
+
+.product__sale-img {
+    width: 83% !important;
+    height: 1rem;
+    position: relative;
+}
+
+.product__sale-img img {
+    width: 42% !important;
+    height: 1rem;
+}
+
+.product__sale-content {
+    position: absolute;
+    top: 0;
+    font-size: 12px;
+    margin: 1px 3px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.product__sell-modifier {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .product__cost{
-    color: #ee4d2d;
+    color: var(--primary-color);
     font-weight: 500;
-    margin: 8px 0;
-    font-size: 18px;
+    font-size: 16px;
+}
+
+.product__sell-number {
+    font-size: 12px;
+    opacity: 0.54;
 }
 
 .product__view-btn{
+    display: none;
+    position: absolute;
+    left: -0.0625rem;
+    top: calc(100% - 0.125rem);
+    width: 100%;
+    height: 1.875rem;
+    background-color: var(--primary-color);
     color: #fff;
-    display: inline-block;
-    background-color: #f44336;
-    padding: 8px;
-    border-radius: 4px;
-    margin: 8px 0;
+    text-align: center;
+    line-height: 1.875rem;
+    border: 1px solid var(--primary-color);
+    border-bottom-left-radius: 0.125rem;
+    border-bottom-right-radius: 0.125rem;
+    z-index: 1;
 }
 
 .product__more {
@@ -170,15 +272,43 @@ a{
     .product__col{
         border: 1px solid #ccc;
         flex: 1;
-        min-width: 185px;
-        max-width: 185px;
-        margin: 8px 6px;
-        background: #fff;
+        min-width: 165px;
     }
 
     .product__view-btn{
         width: 90%;
         font-size: 14px;
+    }
+
+    .product__time-sale {
+        display: flex;
+        padding: 0.125rem 0.25rem;
+        min-height: 10px;
+        color: var(--primary-color);
+        border: 0.0625rem solid var(--primary-color);
+        font-size: 0.625rem;
+        align-items: center;
+        width: 67.2%;
+    }
+
+    .product__sale-img {
+        width: 100% !important;
+    }
+
+    .product__sale-content {
+        margin: 1px 5px;
+    }
+
+    .product__time-sale--none {
+        display: flex;
+        height: 15px;
+    }
+}
+
+/* Tablet */
+@media(min-width: 46.25em) and (max-width:64em) {
+    .product {
+        max-width: 597px;
     }
 }
 
