@@ -149,24 +149,34 @@
         width: 100%;
     }
 
+    /* Nhan yeu thich  */
 
-    .btn{
-        display: block;
-        padding: 10px;
-        background-color: #000;
+    .product__love-product {
+        display: flex;
         color: #fff;
-        border: none;
-        font-size: 18px;
-        width: 100%;
-    }
-    
-    .btn:hover{
-        background-color: #ccc;
-        color: #000;
+        background-color: #f25220;
+        position: absolute;
+        top: 30px;
+        left: -13px;
+        align-items: center;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
     }
 
-    .opp-btn{
-        display: none;
+    .product__love-product::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 24px;
+        bottom: -0.1875rem;
+        border-top: 9px solid #913113;
+        border-left: 13px solid transparent;
+    }
+
+    .product__love-product p{
+        font-size: 18px;
+        line-height: 24px;
     }
 
     /* cuối trang */

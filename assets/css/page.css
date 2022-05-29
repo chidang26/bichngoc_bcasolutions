@@ -48,7 +48,6 @@
 .product__col{
     position: relative;
     border: 1px solid #ccc;
-    flex: 1;
     min-width: 185px;
     max-width: 185px;
     margin: 8px 6px;
@@ -56,6 +55,7 @@
     overflow: visible;
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
 .product__col:hover{
@@ -219,6 +219,10 @@
     opacity: 0.54;
 }
 
+.product__view {
+    background-color: transparent;
+}
+
 .product__view-btn{
     display: none;
     position: absolute;
@@ -234,6 +238,10 @@
     border-bottom-left-radius: 0.125rem;
     border-bottom-right-radius: 0.125rem;
     z-index: 1;
+}
+
+.product__view-btn a{
+    color: #fff;
 }
 
 .product__more {
@@ -275,6 +283,15 @@
         min-width: 165px;
     }
 
+    .product__col:hover .product__view{
+        display: flex;
+    }
+
+    .product__col:hover .product__view-btn{
+        display: block;
+    }
+
+
     .product__view-btn{
         width: 90%;
         font-size: 14px;
@@ -303,6 +320,30 @@
         display: flex;
         height: 15px;
     }
+
+    .product__view{
+        position: absolute;
+        background-color: #333;
+        opacity: 0.7;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        display: none;
+        align-items: center;
+    }   
+    
+    .product__view-btn {
+        display: none;
+        width: 80%;
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        border-radius: 4px;
+        opacity: 1;
+    }
+
+
 }
 
 /* Tablet */
