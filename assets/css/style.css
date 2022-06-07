@@ -1,5 +1,7 @@
+/* 1em = 1em */
+
 .mb-32{
-    margin-bottom: 32px !important;
+    margin-bottom: 2em !important;
 }
 
 .phone-number{
@@ -18,9 +20,9 @@
     text-align: center;
     letter-spacing: 4px;
     font-weight: 200;
-    margin: 10px 0;
+    margin: 0.625em 0;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 1.875em;
 }
 .sub-heading{
     margin: 15px 0;
@@ -39,7 +41,7 @@
     overflow: hidden;
     height: 46.33px;
     background: var(--black-color);
-    box-shadow: 0 0 10px rgb(0 0 0 / 40%);
+    box-shadow: 0 0 0.625em rgb(0 0 0 / 40%);
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -74,7 +76,7 @@
     color: var(--white-color);
     display: flex;
     flex-direction: column;
-    padding: 64px 16px;
+    padding: 64px 1em;
     text-align: justify;
 }
 
@@ -86,11 +88,11 @@
 
 .about__col{
     width: 45%;
-    padding: 0 16px;
+    padding: 0 1em;
     flex: 1;
 }
 
-.about .about__col__description{
+.about__col__description{
     background-color: var(--white-color);
     color: var(--black-color);
     border-radius: 1%;
@@ -105,36 +107,37 @@
 }
 
 /* product */
-.product{
+#product{
     display: flex;
     flex-direction: column;
-    padding: 64px 16px;
+    padding: 64px 1em;
+    background-color: #f0f0f0;
+}
+
+.product{
+    display: flex;
+    padding: 2em 0.5em;
+    flex-direction: row;
+    flex-wrap: wrap;
     max-width: 800px;
     margin: 0 auto;
 }
 
-.product__row{
-    padding: 32px 8px;
-    flex-direction: row;
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    align-content: center;
-}
-
 .product__col{
+    position: relative;
+    border: 1px solid #ccc;
+    min-width: 31%;
+    max-width: 32%;
+    margin: 0.5em 6px;
+    background: #fff;
+    overflow: visible;
     display: flex;
     flex-direction: column;
-    position: relative;
-    cursor: pointer;
-    float: left;
-    margin: 0 1.3%;
     flex: 1;
-    justify-content: center;
 }
 
 .product__col:hover{
-    box-shadow: 0 0 10px rgb(0 0 0 / 40%);
+    box-shadow: 0 0 0.625em rgb(0 0 0 / 40%);
 }
 
 /* Nhãn giảm giá  */
@@ -180,7 +183,7 @@
     color: #fff;
     background-color: #f25220;
     position: absolute;
-    top: 10px;
+    top: 0.625em;
     left: -5px;
     align-items: center;
     border-top-right-radius: 2px;
@@ -214,8 +217,8 @@
 }
 
 .product__content{
-    padding: 8px;
-    background: #ddd;
+    padding: 0.5em;
+    background: var(--white-color);
     display: flex;
     flex-direction: column;
 }
@@ -224,10 +227,57 @@
     color: var(--text-color);
 }
 
+.product__time-sale {
+    display: flex;
+    padding: 0.125rem 0.25rem;
+    min-height: 0.625em;
+    color: var(--primary-color);
+    border: 0.0625rem solid var(--primary-color);
+    font-size: 1rem;
+    align-items: center;
+    width: 67.2%;
+    margin: 8.5px 0;
+}
+
+.product__time-sale--none {
+    display: flex;
+    min-height: 1.75em;
+    border: none;
+    width: none;
+    color: #fff;
+}
+
+.product__sale {
+    display: flex;
+}
+
+.product__sale-img {
+    width: 83% !important;
+    height: 40px;
+    position: relative;
+    display: flex;  
+    align-items: center;
+    align-content: center;
+}
+
+.product__sale-img img {
+    width: 50% !important;
+    height: 1.875em;
+}
+
+.product__sale-content {
+    position: absolute;
+    top: 0;
+    font-size: 17px;
+    margin: 0.625em 0.8125em;
+    font-weight: 500;
+    color: #fff;
+}
+
 .product__cost{
     color: var(--primary-color);
     font-weight: 500;
-    margin: 8px 0;
+    margin: 0.5em 0;
     font-size: 18px;
 }
 
@@ -235,25 +285,25 @@
     color: var(--white-color);
     display: inline-block;
     background-color: var(--primary-color);
-    padding: 8px;
+    padding: 0.5em;
     border-radius: 4px;
-    margin: 8px 0;
+    margin: 0.5em 0;
     display: flex;
     justify-content: center;
 }
 
 .product__more {
-    margin-top: 16px;
     display: flex;
+    margin-top: 1em;
+    width: 100%;
     justify-content: center;
-    align-items: center;
-    align-content: center;
 }
 
 .product__more-button {
     border: 1px solid var(--black-color);
     color: var(--text-color);
     background-color: #ddd;
+    padding: 8px 16px;
 }
 
 /* OPP */
@@ -294,7 +344,7 @@
 
 #footer .col-third a{
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 0.625em;
     letter-spacing: 2px;
     color: var(--black-color);
 }
@@ -307,23 +357,19 @@
 #footer .icon{
     max-width: 185px;
     margin: 0 auto;
-    font-size: 30px;
-    padding: 32px 0;
+    font-size: 1.875em;
+    padding: 2em 0;
     text-align: center;
     display: flex;
 }
 
 #footer i{
-    padding: 8px;
+    padding: 0.5em;
     display: inline-block;
 }
 
 #footer i:hover{
     color: rgb(0, 0, 255);
-}
-
-.page{
-    display: none;
 }
 
 

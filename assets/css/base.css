@@ -30,6 +30,10 @@ ul{
     list-style-type: none;
 }
 
+.line-through-text{
+    text-decoration: line-through !important;
+}
+
 .center{
     text-align: center;
 }
