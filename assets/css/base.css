@@ -56,3 +56,9 @@ ul{
 .font-s{
     font-size: 14px !important;
 }
+
+@media (max-width: 46.1875em){
+    .hidden-on-mobile {
+        display: none !important;
+    }
+}

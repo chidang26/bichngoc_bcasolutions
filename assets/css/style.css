@@ -6,12 +6,12 @@
 
 .phone-number{
     text-decoration:underline;
-    color: #065fd4;
+    color: #fff;
 }
 
 .menu-icon{
     display: none;
-    color: var(--white-color);
+    color: var(--black-color);
 }
 
 /* text-style */
@@ -38,29 +38,43 @@
 
 /* main */
 #header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     overflow: hidden;
-    height: 46.33px;
+    height: 75px;
     background: var(--black-color);
     box-shadow: 0 0 0.625em rgb(0 0 0 / 40%);
     position: fixed;
     width: 100%;
     z-index: 1;
+    background-color: var(--white-color);
+    padding: 0 12px;
+}
+
+.header__logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-img {
+    width: 35%;
 }
 
 .header__nav{
+    display: flex;
     text-transform: uppercase;
-    display: inline-block;
-    background: var(--black-color);
+    justify-content: space-around;
 }
 .header__nav a{
-    color: var(--white-color);
-    padding: 14.6px 24px;
+    color: var(--black-color);
+    padding: 29.6px 24px;
     display: inline-block;
 }
 
-.nav__item:hover{
-    color: var(--black-color);
-    background-color: #ccc;
+.nav__item:hover {
+    color: #5bbf8f;
 }
 
 #slider{
@@ -69,7 +83,9 @@
 }
 
 #about{
-    background-color: var(--black-color);
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, #333, #777676);
 }
 
 .about{
@@ -93,9 +109,6 @@
 }
 
 .about__col__description{
-    background-color: var(--white-color);
-    color: var(--black-color);
-    border-radius: 1%;
 }
 
 .about__col img{ 
@@ -111,7 +124,7 @@
     display: flex;
     flex-direction: column;
     padding: 64px 1em;
-    background-color: #f0f0f0;
+    background-color: var(--white-color);
 }
 
 .product{
@@ -304,23 +317,6 @@
     color: var(--text-color);
     background-color: #ddd;
     padding: 8px 16px;
-}
-
-/* OPP */
-
-.link-opp{
-    padding-top: 50%;
-    background: url('../img/tuyendung.png') top center / cover;
-}
-
-.opp-btn{
-    width: 20%;
-    margin-left: 8%;
-    margin-bottom: 3%;
-}
-
-.opp-btn:hover{
-    opacity: 2;
 }
 
 #footer{
